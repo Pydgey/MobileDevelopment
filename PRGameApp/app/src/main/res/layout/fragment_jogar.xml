@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".jogarFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/pergunta"
+        android:background="#C4FFE3"
+        android:gravity="center"
+        style="@style/textoPadrao"
+        android:text="Pergunta"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/resposta"
+        android:layout_below="@+id/pergunta"
+        android:text="Resposta"
+        android:background="#DCE0FB"
+        android:gravity="center"
+        style="@style/textoPadrao"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/botoes"
+        android:orientation="horizontal"
+        android:layout_above="@+id/botaoCadastrarPR">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/botaoExibirResposta"
+            android:textSize="18sp"
+            android:text="EX. Resposta"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/botaoPular"
+            android:textSize="18sp"
+            android:text="Pular"
+            android:drawableRight="@android:drawable/ic_media_next"
+            android:layout_weight="0"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/botaoCadastrarPR"
+        android:layout_alignParentBottom="true"
+        android:text="Cadastrar perguntas e respostas"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/purple_200"/>
+
+</RelativeLayout>
